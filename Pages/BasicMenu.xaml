@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CVMobileApp.Pages.BasicMenu"
+             Title="Main Menu">
+
+    <Grid>
+        <!-- Define rows with star sizing for top content and auto height for bottom button -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <!-- Top content area -->
+            <RowDefinition Height="Auto" />
+            <!-- Bottom button area -->
+        </Grid.RowDefinitions>
+
+        <ScrollView Grid.Row="0" Padding="30,0">
+            <VerticalStackLayout Spacing="25">
+                <Label
+                    Text="Pick something you want to learn about me!"
+                    Style="{StaticResource Headline}"
+                    SemanticProperties.HeadingLevel="Level1" />
+
+                <Button
+                    x:Name="CodingSkillsBtn"
+                    Text="Coding Skills" 
+                    SemanticProperties.Hint="Brief List of coding my skills." 
+                    Clicked="onCodingSkillsBtnClicked"
+                    HorizontalOptions="Fill" />
+
+                <Button
+                    x:Name="PastJobsBtn"
+                    Text="Past Jobs Experience" 
+                    SemanticProperties.Hint="Brief List of Past jobs experience." 
+                    Clicked="onPastJobsBtnClicked"
+                    HorizontalOptions="Fill" />
+
+                <Button
+                    x:Name="PublicationsBtn"
+                    Text="Publications" 
+                    SemanticProperties.Hint="Brief List of publications." 
+                    Clicked="OnPublicationsBtnClicked"
+                    HorizontalOptions="Fill" />
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+
+</ContentPage>

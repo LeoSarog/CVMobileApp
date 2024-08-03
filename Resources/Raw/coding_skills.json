@@ -1,0 +1,18 @@
+[
+  {
+    "Name": "C",
+    "Description": "Used for API/SDK functions to ensure maximum platform compatibility. Also used for GPU parallelization with CUDA C API."
+  },
+  {
+    "Name": "C++",
+    "Description": "Main language."
+  },
+  {
+    "Name": "C#",
+    "Description": "Currently learning language."
+  },
+  {
+    "Name": "Python",
+    "Description": "Secondary language."
+  }
+]
