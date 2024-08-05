@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CVMobileApp.Pages.PublicationsPage"
-             Title="PublicationsPage">
+             Title="Publications">
 
     <StackLayout>
         <ListView x:Name="itemsListView"
@@ -16,6 +16,13 @@
             </ListView.ItemTemplate>
         </ListView>
 
+        <!-- Label with small text under the ListView -->
+        <Label Text="Click on a publication to open it."
+               FontSize="Small"
+               TextColor="Gray"
+               HorizontalOptions="Center"
+               VerticalOptions="Start"/>
+        
         <Button
         x:Name="BackToBasicMenuBtn"
         Text="Return to main menu." 

@@ -6,7 +6,7 @@ namespace CVMobileApp.Pages;
 public partial class PublicationsPage : ContentPage
 {
   public string SelectedItem { get; set; }
-
+  public string PathToSelectedPublication { get; set; }
   public PublicationsPage()
   {
     InitializeComponent();
@@ -14,24 +14,37 @@ public partial class PublicationsPage : ContentPage
     // Sample data
     var items = new List<string>
             {
-                "Apple",
-                "Banana",
-                "Cherry"
+                "Self-Supervised Deep Depth Denoising",
+                "Human4D",
+                "AvoidX"
             };
 
     // Set the data source for the ListView
     itemsListView.ItemsSource = items;
   }
 
-  private void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
+  private async void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
   {
     // Handle item selection
     if (e.SelectedItem is string selectedItem)
     {
-      DisplayAlert("Item Selected", $"You selected: {selectedItem}", "OK");
-
+      if (selectedItem == PathToSelectedPublication) return;
+      switch (selectedItem)
+      {
+        case "Self-Supervised Deep Depth Denoising":
+          PathToSelectedPublication = "DDD_Paper.pdf";
+          break;
+        case "Human4D":
+          PathToSelectedPublication = "Human4D.pdf";
+          break;
+        case "AvoidX":
+          PathToSelectedPublication = "AvoidX.pdf";
+          break;
+      }
       // Optionally, clear the selection
       ((ListView)sender).SelectedItem = null;
+      // Open the PDFViewer
+      await Navigation.PushAsync(new CVMobileApp.Pages.PDFViewer(PathToSelectedPublication));
     }
   }
 
