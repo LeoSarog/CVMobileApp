@@ -21,7 +21,7 @@
 		<Nullable>enable</Nullable>
 
 		<!-- Display name -->
-		<ApplicationTitle>CVMobileApp</ApplicationTitle>
+		<ApplicationTitle>SaroglouCV</ApplicationTitle>
 
 		<!-- App Identifier -->
 		<ApplicationId>com.companyname.cvmobileapp</ApplicationId>
