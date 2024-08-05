@@ -29,6 +29,7 @@ public partial class BasicMenu : ContentPage
 
   private async void OnPublicationsBtnClicked(object sender, EventArgs e)
   {
+    await Navigation.PushAsync(new CVMobileApp.Pages.PublicationsPage());
     Console.WriteLine("Publications sections was selected.");
   }
 }
