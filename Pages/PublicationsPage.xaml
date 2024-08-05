@@ -11,7 +11,13 @@
                   HasUnevenRows="True">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <TextCell Text="{Binding .}" />
+                    <ViewCell>
+                        <Label 
+                            Text="{Binding .}"
+                            TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource PrimaryDark}}"
+                            VerticalOptions="Center"
+                            Padding="10" />
+                    </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
@@ -22,14 +28,12 @@
                TextColor="Gray"
                HorizontalOptions="Center"
                VerticalOptions="Start"/>
-        
-        <Button
-        x:Name="BackToBasicMenuBtn"
-        Text="Return to main menu." 
-        SemanticProperties.Hint="Return to main menu." 
-        Clicked="onBackToBasicMenuBtnClicked"
-        HorizontalOptions="Fill" />
-    </StackLayout>
 
-    
+        <Button
+            x:Name="BackToBasicMenuBtn"
+            Text="Return to main menu." 
+            SemanticProperties.Hint="Return to main menu." 
+            Clicked="onBackToBasicMenuBtnClicked"
+            HorizontalOptions="Fill" />
+    </StackLayout>
 </ContentPage>
