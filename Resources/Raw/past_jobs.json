@@ -1,0 +1,14 @@
+[
+  {
+    "Company": "Imverse SA",
+	  "Location": "Switzerland",
+	  "Duration": "2.7 years",
+    "Description": "Scalable volumetric video cloud platform for creating and distributing live 3D experiences. This solution provides an end-to-end distribution pipeline for near-reality spatial experiences—such as training, retail, collaboration, and unique combination of Voxels, Cloud, and Machine Learning technologies."
+  },
+  {
+    "Company": "Center for Research and Technology Hellas",
+	  "Location": "Greece",
+	  "Duration": "2.6 years",
+    "Description": "EU Research projects using sensors acquisitions for multi-view camera systems, creating realt-time 3D content. Contribution to publications for conferences like ICCV and IEEEACCESS."
+  }
+]

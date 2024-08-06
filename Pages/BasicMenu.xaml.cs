@@ -24,6 +24,7 @@ public partial class BasicMenu : ContentPage
 
   private async void onPastJobsBtnClicked(object sender, EventArgs e)
   {
+    await Navigation.PushAsync(new CVMobileApp.Pages.PastJobsPage());
     Console.WriteLine("Past jobs sections was selected.");
   }
 
@@ -35,7 +36,7 @@ public partial class BasicMenu : ContentPage
 
   private async void onContactFormBtnClicked(object sender, EventArgs e)
   {
-    //await Navigation.PushAsync(new CVMobileApp.Pages.PublicationsPage());
+    //await Navigation.PushAsync(new CVMobileApp.Pages.PastJobsPage());
     Console.WriteLine("Someone wants to contact me!");
   }
   

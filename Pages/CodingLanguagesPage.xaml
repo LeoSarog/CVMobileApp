@@ -28,8 +28,8 @@
 
             <Button
             x:Name="BackToBasicMenuBtn"
-            Text="Return to main menu." 
-            SemanticProperties.Hint="Return to main menu." 
+            Text="Back" 
+            SemanticProperties.Hint="Back" 
             Clicked="onBackToBasicMenuBtnClicked"
             HorizontalOptions="Fill" />
         </StackLayout>
