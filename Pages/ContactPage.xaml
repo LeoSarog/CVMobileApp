@@ -18,10 +18,6 @@
                    Text="{Binding Surname}" 
                    FontSize="18" />
 
-            <Entry Placeholder="Email" 
-                   Text="{Binding PersonalMail}" 
-                   FontSize="18" /> 
-
             <Editor Placeholder="Your message..." 
                     Text="{Binding Message}" 
                     FontSize="18" 

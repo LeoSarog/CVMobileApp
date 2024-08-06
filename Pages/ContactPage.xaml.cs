@@ -7,7 +7,6 @@ public partial class ContactPage : ContentPage
 {
   public string Name { get; set; }
   public string Surname { get; set; }
-  public string PersonalMail { get; set; }
   public string Message { get; set; }
 
   public ICommand SubmitCommand { get; }
@@ -39,12 +38,10 @@ public partial class ContactPage : ContentPage
       // Clear the form after submission
       Name = string.Empty;
       Surname = string.Empty;
-      PersonalMail = string.Empty;
       Message = string.Empty;
       // Refresh the bindings to update the UI
       OnPropertyChanged(nameof(Name));
       OnPropertyChanged(nameof(Surname));
-      OnPropertyChanged(nameof(PersonalMail));
       OnPropertyChanged(nameof(Message));
     }
     catch (FeatureNotSupportedException)
