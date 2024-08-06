@@ -32,4 +32,11 @@ public partial class BasicMenu : ContentPage
     await Navigation.PushAsync(new CVMobileApp.Pages.PublicationsPage());
     Console.WriteLine("Publications sections was selected.");
   }
+
+  private async void onContactFormBtnClicked(object sender, EventArgs e)
+  {
+    //await Navigation.PushAsync(new CVMobileApp.Pages.PublicationsPage());
+    Console.WriteLine("Someone wants to contact me!");
+  }
+  
 }

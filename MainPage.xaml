@@ -11,11 +11,13 @@
                 Source="leo_img_gray.png"
                 HeightRequest="185"
                 Aspect="AspectFit"
+                HorizontalOptions="End"
                 SemanticProperties.Description="dot net bot in a race car number eight" />
 
             <Label
-                Text="Hello guys, this is a mobile app to show you my coding skills, experience and past tasks!"
-                Style="{StaticResource Headline}"
+                Text="Hello guys, this is a mobile app to show you my coding skills, experience and past tasks! I recently started experimented with mobile apps so this is the outcome of the tutorials and my personal coding."
+                HorizontalOptions="Start"
+                Style="{StaticResource SubHeadline}"
                 SemanticProperties.HeadingLevel="Level1" />
 
             <Button
@@ -23,6 +25,7 @@
                 Text="Let's get started!" 
                 SemanticProperties.Hint="Start the tour" 
                 Clicked="OnMainPageButtonClicked"
+                VerticalOptions="End"
                 HorizontalOptions="Fill" />
         </VerticalStackLayout>
     </ScrollView>

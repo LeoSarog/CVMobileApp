@@ -5,14 +5,14 @@
   },
   {
     "Name": "C++",
-    "Description": "Main language."
+    "Description": "Main language. Multi-threaded and concurrent code implementations, performant backend operations."
   },
   {
     "Name": "C#",
-    "Description": "Currently learning language."
+    "Description": "Currently learning language. This app's backend is actually implemented in C#"
   },
   {
     "Name": "Python",
-    "Description": "Secondary language."
+    "Description": "Secondary language. Automatic procedures, data handling for datasets and AI/ML operations/visualizations."
   }
 ]

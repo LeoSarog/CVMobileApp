@@ -21,13 +21,6 @@
                     SemanticProperties.HeadingLevel="Level1" />
 
                 <Button
-                    x:Name="CodingSkillsBtn"
-                    Text="Coding Skills" 
-                    SemanticProperties.Hint="Brief List of coding my skills." 
-                    Clicked="onCodingSkillsBtnClicked"
-                    HorizontalOptions="Fill" />
-
-                <Button
                     x:Name="PastJobsBtn"
                     Text="Past Jobs Experience" 
                     SemanticProperties.Hint="Brief List of Past jobs experience." 
@@ -40,6 +33,21 @@
                     SemanticProperties.Hint="Brief List of publications." 
                     Clicked="OnPublicationsBtnClicked"
                     HorizontalOptions="Fill" />
+
+                <Button
+                    x:Name="CodingSkillsBtn"
+                    Text="Coding Skills" 
+                    SemanticProperties.Hint="Brief List of coding my skills." 
+                    Clicked="onCodingSkillsBtnClicked"
+                    HorizontalOptions="Fill" />
+
+                <Button
+                    x:Name="ContactFormBtn"
+                    Text="Contact Me" 
+                    SemanticProperties.Hint="Contact the developer." 
+                    Clicked="onContactFormBtnClicked"
+                    VerticalOptions="End"
+                    HorizontalOptions="Fill" /> 
             </VerticalStackLayout>
         </ScrollView>
     </Grid>
