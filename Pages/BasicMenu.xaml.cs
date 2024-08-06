@@ -36,7 +36,7 @@ public partial class BasicMenu : ContentPage
 
   private async void onContactFormBtnClicked(object sender, EventArgs e)
   {
-    //await Navigation.PushAsync(new CVMobileApp.Pages.PastJobsPage());
+    await Navigation.PushAsync(new CVMobileApp.Pages.ContactPage());
     Console.WriteLine("Someone wants to contact me!");
   }
   

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CVMobileApp.Pages.ContactPage"
+             Title="Contact Us">
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="20">
+
+            <Label Text="Contact Us" 
+                   FontSize="24"
+                   HorizontalOptions="Center" />
+
+            <Entry Placeholder="Name" 
+                   Text="{Binding Name}" 
+                   FontSize="18" />
+
+            <Entry Placeholder="Surname" 
+                   Text="{Binding Surname}" 
+                   FontSize="18" />
+
+            <Entry Placeholder="Email" 
+                   Text="{Binding PersonalMail}" 
+                   FontSize="18" /> 
+
+            <Editor Placeholder="Your message..." 
+                    Text="{Binding Message}" 
+                    FontSize="18" 
+                    HeightRequest="150" />
+
+            <Button Text="Submit" 
+                    FontSize="18"
+                    Command="{Binding SubmitCommand}"/>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
