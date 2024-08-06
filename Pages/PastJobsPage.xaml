@@ -12,10 +12,18 @@
                 <DataTemplate>
                     <Frame BorderColor="LightGray" CornerRadius="5" Padding="10" Margin="10">
                         <StackLayout>
-                            <Label Text="{Binding Company}" FontSize="20" FontAttributes="Bold"/>
-                            <Label Text="{Binding Location}" FontSize="16" FontAttributes="Italic"/>
-                            <Label Text="{Binding Duration}" FontSize="14"/>
-                            <Label Text="{Binding Description}" FontSize="14"/>
+                            <Label 
+                                Text="{Binding Company}" FontSize="20" FontAttributes="Bold"
+                                TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource PrimaryDark}}"/>
+                            <Label 
+                                Text="{Binding Location}" FontSize="16" FontAttributes="Italic"
+                                TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource PrimaryDark}}"/>
+                            <Label 
+                                Text="{Binding Duration}" FontSize="14"
+                                TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource PrimaryDark}}"/>
+                            <Label 
+                                Text="{Binding Description}" FontSize="14"
+                                 TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource PrimaryDark}}"/>
                         </StackLayout>
                     </Frame>
                 </DataTemplate>
